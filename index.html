@@ -1,17 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Centralizado!</title>
+    <style>
+        /* Remove margens padrão do navegador */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Garante que o html e o body ocupem 100% da altura */
+        }
+
+        body {
+            /* 1. Ativa o modo Flexbox */
+            display: flex;
+            
+            /* 2. Empilha os itens um em cima do outro */
+            flex-direction: column;
+
+            /* 3. Centraliza verticalmente */
+            justify-content: center;
+
+            /* 4. Centraliza horizontalmente */
+            align-items: center;
+
+            /* 5. Garante que o corpo da página ocupe no mínimo toda a altura da tela */
+            min-height: 100vh; 
+            
+            /* Centraliza o texto dentro dos elementos h1 e p */
+            text-align: center;
+
+            /* Adiciona um pequeno preenchimento para o texto não colar nas bordas em telas pequenas */
+            padding: 20px;
+
+            background-color: black;
+        }
+
+        img {
+            /* Faz a imagem ser responsiva e não passar da largura da tela */
+            max-width: 100%;
+            height: auto;
+            /* Adiciona um espaço entre a imagem e os textos */
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            /* Limita a largura do parágrafo para melhor leitura */
+            max-width: 600px;
+            color: white;
+        }
+        h1 {
+            color: red;
+            
+        }
+    </style>
 </head>
 <body>
-<p>Lucas</p>
-<div class="joao">
 
-    <p>João</p>
-    <div class="maria">
-        <p>Maria</p>
-</div>
+    <h1>Homen de ferro</h1>
+    
+    <img src="https://wallpaper.forfun.com/fetch/b7/b7632e14f1aa34f0f53d8a735f8407e6.jpeg" alt="Imagem do Homem de Ferro voando">
+    
+    <p> <Span>O Homem de Ferro é Tony Stark, um bilionário, inventor e gênio que usa armaduras de alta tecnologia para combater o crime e defender o mundo. Criado pela Marvel Comics e interpretado nos filmes do Universo Cinematográfico Marvel por Robert Downey Jr., ele é um dos super-heróis mais populares e um membro fundador dos Vingadores. </Span></p>
+
 </body>
 </html>
